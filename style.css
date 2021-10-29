@@ -61,4 +61,18 @@ body {
   font-weight: 900;
 }
 
+.localisation {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  background: #EAEAEA;
+  font-size: 1.2rem;
+  position: relative;
+  box-shadow: 0px 2px 5px 0px inset #A6A6A6;
+}
+
+.ville {
+  margin: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
