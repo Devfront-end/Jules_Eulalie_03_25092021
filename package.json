@@ -1,0 +1,22 @@
+{
+  "name": "projet_3_ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "sass":"sass --watch ./main.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Devfront-end/Jules_Eulalie_03_25092021.git"
+  },
+  "keywords": [
+    "7472021"
+  ],
+  "author": "Jules",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Devfront-end/Jules_Eulalie_03_25092021/issues"
+  },
+  "homepage": "https://github.com/Devfront-end/Jules_Eulalie_03_25092021#readme"
+}

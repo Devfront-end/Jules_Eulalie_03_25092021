@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Shrikhand&display=swap');
+
+$primary: #9356DC;
+$secondary: #FF79DA;
+$tertiary:#99E2D0;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Shrikland'Roboto;
+}
+
+// *****LOADER SPINNER***** //
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.8);
+    animation: fadeout 3s;
+    animation-fill-mode: both;
+    animation-delay: 1.5s;
+
+    &__spinner {
+        border-top: 10px solid $primary;
+        border-bottom: 10px solid $secondary;
+        border-left: 10px solid $tertiary;
+        border-right: 10px solid $tertiary;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        animation: spinner 1.5s infinite;
+    }
+
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        z-index: -50;
+        opacity: 0;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// ********HEADER**************** //
+
+.header {
+    font-family: Shrikhand;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    padding-top: 20px;
+    padding-bottom: 4em;
+    font-style: italic;
+    font-weight: 900;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+.localisation {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    background: #EAEAEA;
+    font-size: 1.2rem;
+    position: relative;
+    box-shadow: 0px 2px 5px 0px inset #A6A6A6;
+    width: 100%;
+
+    &__ville {
+        margin: 20px;
+        margin: 20 px;
+        font-family: 'Roboto';
+        font-size: 0.8em;
+    }
+}
